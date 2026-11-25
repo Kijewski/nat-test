@@ -1,0 +1,13 @@
+[default]
+locale = "en-us"
+
+[default.extend-words]
+customise = "customise" # that's how `fluent_templates` writes it
+
+[files]
+extend-exclude = [
+    # Build artifacts
+    ".*", "_*",
+    # Localizations ("Konfiguration" is "Configuration" in German, and must not be "fixed")
+    "*.ftl",
+]
